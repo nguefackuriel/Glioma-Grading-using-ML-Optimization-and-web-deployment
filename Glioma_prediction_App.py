@@ -2,12 +2,14 @@ import numpy as np
 import streamlit as st
 import pickle
 import pandas as pd
-from sklearn.preprocessing import OneHotEncoder
+
 from pandas import DataFrame
 
 from google.oauth2 import service_account
 #from gsheetsdb import connect
 from gspread_pandas import Spread,Client
+import sklearn
+from sklearn.preprocessing import OneHotEncoder
 
 
 
@@ -164,7 +166,7 @@ def main():
         opt_df.iloc[:,-1] = label
         new_df = pd.concat([df, opt_df], ignore_index=True)
         update_the_spreadsheet('Sheet1', new_df)
-        st.write(new_df)
+        #st.write(new_df)
 
     # Display the result
     st.success(result)
