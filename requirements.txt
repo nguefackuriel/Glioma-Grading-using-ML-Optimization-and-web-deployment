@@ -1,4 +1,4 @@
 lightgbm
 xgboost
-scikit-learn
+scikit-learn==1.1.2
 gspread_pandas
