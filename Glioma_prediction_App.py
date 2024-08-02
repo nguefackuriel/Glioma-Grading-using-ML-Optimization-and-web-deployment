@@ -50,7 +50,7 @@ def update_the_spreadsheet(spreadsheet_name, dataframe):
 # Load our mnodel
 model_load = pickle.load(open('my_model_glioma_xgb.sav', 'rb'))
 X_train = pd.read_csv('X_train_.csv')
-encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
+encoder = OneHotEncoder(sparse=False, handle_unknown='ignore')
 # Identify categorical columns
 categorical_cols = X_train.select_dtypes('object').columns.tolist()
 encoder.fit(X_train[categorical_cols])
