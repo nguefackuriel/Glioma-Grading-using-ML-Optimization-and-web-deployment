@@ -104,7 +104,7 @@ def main():
     PIK3CA = col1.selectbox('Select the PIK3CA(phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha) value', ['NOT_MUTATED', 'MUTATED'], key='PIK3CA')
     NF1 = col2.selectbox('Select the NF1(neurofibromin 1) value', ['NOT_MUTATED', 'MUTATED'], key='NF1')
     PIK3R1 = col2.selectbox('Select the PIK3R1(phosphoinositide-3-kinase regulatory)', ['NOT_MUTATED', 'MUTATED'], key='PIK3R1')#subunit 1 value
-    FUBP1 = col2.selectbox('Select the FUBP1( value', ['NOT_MUTATED', 'MUTATED'], key='FUBP1') #far upstream element binding protein 1)
+    FUBP1 = col2.selectbox('Select the FUBP1 value', ['NOT_MUTATED', 'MUTATED'], key='FUBP1') #far upstream element binding protein 1)
     RB1 = col2.selectbox('Select the RB1(RB transcriptional corepressor 1) value', ['NOT_MUTATED', 'MUTATED'], key='RB1')
     NOTCH1 = col2.selectbox('Select the NOTCH1(notch receptor 1) value', ['NOT_MUTATED', 'MUTATED'], key='NOTCH1')
     BCOR = col2.selectbox('Select the BCOR(BCL6 corepressor) value', ['NOT_MUTATED', 'MUTATED'], key='BCOR')
